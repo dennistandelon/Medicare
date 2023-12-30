@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Media Care</title>
+</head>
+<body>
+
+    <header id="header-bar">
+        <a href="./home-page.html"><img src="./assets/icon.png" alt="logo"></a>
+        <nav id="menu">
+                <div id="hamburger" class="no-display">
+                    <button onclick="hamburger()"> &#9776;</button>
+                </div>
+                <div id="menu-list">
+                    <a class="right-margin" id="Home" href="./home-page.html">Home</a>
+                    <span class="right-margin flex-column-center" id="Product">
+                        <a id="Product-text" href="#">Products</a>
+                        <div class="display-list">
+                            <a href="./product-page.html">Healthcare</a>
+                            <a href="#">Cosmetic</a>
+                            <a href="#">Misc.</a>
+                        </div>
+                    </span>
+                    <a class="right-margin" id="AboutUs" href="./about-us-page.html">About Us</a>
+                    <a class="right-margin" id="Register" href="./register-page.html">Register</a>
+                    <a class="right-margin" id="Login" href="./login-page.html">Login</a>
+                </div>
+        </nav>
+    </header>
+    
+
+    <script src="./script.js"></script>
+
+    <section id="content">
+        <div id="product-content">
+            <div class="flex-column-center">
+                <h1>Healthcare</h1>
+                <div>
+                    Our most popular health care products, made and packaged carefully to cater your needs
+                </div>
+            </div>
+            <div class="flex-warp">
+                <span>
+                    <img src="./assets/healthcare/basil_oil.jpg" alt="">
+                    <div class="flex-column-center">
+                        <b>MediCare Basil Oil (Best Selling)</b>
+                        <p>Basil oil is extracted from the herb Ocimum basilicum, of the Lamiaceae (Labiatae) family. It is also known as European, French, common or sweet basil.</p>
+                    </div>
+                </span>
+                <span>
+                    <img src="./assets/healthcare/shampoo.jpg" alt="">
+                    <div class="flex-column-center">
+                        <b>MediCare Special Shampoo</b>
+                        <p>Get a head start every morning and experience the refreshing tingle of our special shampoo. Our shampoo contains special ingredients and tea tree oil to help wash away impurities.</p>
+                    </div>
+                </span>
+                <span>
+                    <img src="./assets/healthcare/lotion.jpg" alt="">
+                    <div class="flex-column-center">
+                        <b>MediCare Body Lotion</b>
+                        <p>Containing earth-derived ingredients (think shea butter, cocoa butter, and jojoba oil) the rich concoction is formulated to condition, nourish, and smooth dry skin. </p>
+                    </div>
+                </span>
+            </div>
+       </div>
+    </section>
+    
+
+    <footer class="flex-column-center">
+        <div id="footer-link">
+            <a href="https://www.twitter.com"><img src="./assets/twitter.png" alt="twitter-logo"></a>
+            <a href="https://www.facebook.com"><img src="./assets/facebook.png" alt="facebook-logo"></a>
+            <a href="https://www.instagram.com"><img src="./assets/instagram.png" alt="instagram-logo"></a>
+        </div>
+        <div>
+            Copyright &#169; 2022 Dennis Tandelon. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

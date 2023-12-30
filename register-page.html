@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Media Care</title>
+</head>
+<body>
+
+    <header id="header-bar">
+        <a href="./home-page.html"><img src="./assets/icon.png" alt="logo"></a>
+        <nav id="menu">
+                <div id="hamburger" class="no-display">
+                    <button onclick="hamburger()"> &#9776;</button>
+                </div>
+                <div id="menu-list">
+                    <a class="right-margin" id="Home" href="./home-page.html">Home</a>
+                    <span class="right-margin flex-column-center" id="Product">
+                        <a id="Product-text" href="#">Products</a>
+                        <div class="display-list">
+                            <a href="./product-page.html">Healthcare</a>
+                            <a href="#">Cosmetic</a>
+                            <a href="#">Misc.</a>
+                        </div>
+                    </span>
+                    <a class="right-margin" id="AboutUs" href="./about-us-page.html">About Us</a>
+                    <a class="right-margin" id="Register" href="./register-page.html">Register</a>
+                    <a class="right-margin" id="Login" href="./login-page.html">Login</a>
+                </div>
+        </nav>
+    </header>
+    
+
+    
+    <section id="content">
+        <div id="register-content" class="flex-column-center">
+            <div class="flex-column-center">
+                <form id="register-form" class="flex-column-left">
+                    <h1>Register</h1>
+                    <div>
+                        <label for="name-input">Full Name</label>
+                        <input type="text" id="name-input">
+                    </div>
+                    <div>
+                        <label for="email-input">Email</label>
+                        <input type="email" id="email-input">
+                    </div>
+                    <div class="gender">
+                        <div>Gender</div>
+                        <input type="radio" name="gender-radio" id="gender-input-male">
+                        <label for="gender-input-male">Male</label>
+                        <input type="radio" name="gender-radio" id="gender-input-female">
+                        <label for="gender-input-female">Female</label> 
+                    </div>
+                    <div>
+                        <label for="city-input">City</label>
+                        <select name="" id="city-input">
+                            <option value="default">Select a city</option>
+                            <option value="Jakarta">Jakarta</option>
+                            <option value="Aceh">Aceh</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="pw-input">Password</label>
+                        <input type="password" name="" id="pw-input">
+                    </div>
+                    <div>
+                        <label for="cpw-input">Confirm Password</label>
+                        <input type="password" name="" id="cpw-input">
+                    </div>
+                    <button class="submit-btn" onclick="return form_validation()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <script src="./script.js"></script>
+
+    <footer class="flex-column-center">
+        <div id="footer-link">
+            <a href="https://www.twitter.com"><img src="./assets/twitter.png" alt="twitter-logo"></a>
+            <a href="https://www.facebook.com"><img src="./assets/facebook.png" alt="facebook-logo"></a>
+            <a href="https://www.instagram.com"><img src="./assets/instagram.png" alt="instagram-logo"></a>
+        </div>
+        <div>
+            Copyright &#169; 2022 Dennis Tandelon. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
